@@ -1,0 +1,30 @@
+.centered{
+	text-align: center;
+}
+
+.club-logo{
+	padding-right: 10px;
+}
+
+.navbar-padding{
+	margin-top: 50px;
+}
+
+.center{
+	width: 80%;
+    margin: 0 auto;
+}
+
+.teamParagraph{
+	margin-top: 20px;
+}
+
+.teamdesc{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.selectMargin{
+	margin-bottom: 20px;
+
+}

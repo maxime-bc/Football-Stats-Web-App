@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Football</title>
+	<link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="drawable/logofoot.png" />
+
+	<!-- Javascript -->
+
+	<!--script src="include/riot+compiler.min.js"></script-->
+	<script src="https://cdn.jsdelivr.net/gh/riot/riot/riot%2Bcompiler.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/riot/route/dist/route.min.js"></script>
+	<script src="include/serviceAjax.js"></script>
+
+	<!-- les composants -->
+
+	<script src="tags/Spinner.tag" type="riot/tag"></script>
+	<script src="tags/Main.tag" type="riot/tag"></script>
+	<script src="tags/Standings.tag" type="riot/tag"></script>
+	<script src="tags/Results.tag" type="riot/tag"></script>
+	<script src="tags/Scorers.tag" type="riot/tag"></script>
+	<script src="tags/Team.tag" type="riot/tag"></script>
+
+</head>
+<body>
+	<div id="view" class="center">
+		<Main></Main>
+	</div>
+</body>	
+
+<script>
+	riot.mixin('serviceAjax', makeServiceAjax());
+	//riot.mixin('bus',{"bus":riot.observable()});
+	riot.mount('*',null);
+
+
+	route.start(true);
+
+
+
+</script>
+
+</html>
